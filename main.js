@@ -1,7 +1,8 @@
 // Inside the curly braces below is the code that runs when someone clicks the
 // single 6-sided die.
 function rollD6() {
-    const roll = 5;
+    const slotMachine = Math.floor((Math.random() * 6) + 1);
+    const roll = slotMachine;
 
 
     // No need to alter the rest of this function!
@@ -19,7 +20,9 @@ function rollD6() {
 // Inside the curly braces below is the code that runs when someone clicks the
 // 12-sided die.
 function rollD12() {
-    const roll = 11;
+    const slotMachine = Math.floor((Math.random() * 12) + 1);
+
+    const roll = slotMachine;
 
 
     // No need to alter the rest of this function!
@@ -37,7 +40,8 @@ function rollD12() {
 // Inside the curly braces below is the code that runs when someone clicks the
 // 20-sided die.
 function rollD20() {
-    const roll = 19;
+    const slotMachine = Math.floor((Math.random() * 20) + 1);
+    const roll = slotMachine;
 
 
     // No need to alter the rest of this function!
@@ -55,8 +59,9 @@ function rollD20() {
 // Inside the curly braces below is the code that runs when someone clicks
 // EITHER of the two six-sided dice in their own section.
 function rollDoubleD6() {
-    const roll1 = 5;
-    const roll2 = 5;
+    const slotMachine = Math.floor((Math.random() * 6) + 1);
+    const roll1 = slotMachine;
+    const roll2 = slotMachine;
 
 
     // No need to alter the rest of this function!
@@ -97,6 +102,8 @@ d12Image.onclick = rollD12;
 const d20Image = document.querySelector('.d20-roll')
 d20Image.onclick = rollD20;
 
+const keanuImage = document.querySelector('.keanu')
+keanuImage.onclock = keanuImage;
 
 
 // For the random image stretch goal, uncomment the following two lines.
